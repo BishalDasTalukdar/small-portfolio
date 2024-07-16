@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishal Das Talukdar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page 1 -->
+    <div class="page" id="page1">
+        <img src="me.png" alt="My Image" class="profile-img">
+        <h1>Bishal Das Talukdar</h1>
+        <button onclick="showPage2()">Click to know more</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page" id="page2" style="display: none;">
+        <h2>About:</h2>
+        <p>I'm Bishal an Enthusiastic Web Developer</p>
+        
+        <h2>Qualifications:</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Madhyamik 1</td>
+                <td>Holy Cross High School</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Higher Secondary</td>
+                <td>IGolden Valley H.S</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Pursuing Graduation</td>
+                <td> Jagannath University</td>
+                <td>3rd</td>
+            </tr>
+        </table>
+        
+        <h2>Projects:</h2>
+        <li> Created a clone on spotify </li>
+        <li>Created a tic tac toe game</li>
+        
+        <h2>Experience:</h2>
+        <p>I Did internship from Diginique Techlabs</p>
+    </div>
+
+    <script>
+        function showPage2() {
+            document.getElementById('page1').style.display = 'none';
+            document.getElementById('page2').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
